@@ -1,5 +1,7 @@
-package net.UltraLow.Objects;
+package net.UltraLow.World;
 
+import net.UltraLow.Objects.Cube;
+import net.UltraLow.Objects.Obstacle;
 import net.UltraLow.Textures.TextureStore;
 import net.UltraLow.Vectors.Vector4f;
 import org.newdawn.slick.opengl.Texture;
@@ -11,11 +13,11 @@ import org.newdawn.slick.opengl.Texture;
  * Time: 9:08 PM
  * To change this template use File | Settings | File Templates.
  */
-public class SpruceObstacle extends Obstacle {
+public class Spruce extends Obstacle {
 
     private Texture trunk, leaf;
 
-    public SpruceObstacle(TextureStore textureStore) {
+    public Spruce(TextureStore textureStore) {
         super(textureStore);
         trunk = textureStore.getTexture("res/log.png");
         // Color<>

@@ -1,4 +1,4 @@
-package net.UltraLow.Objects;
+package net.UltraLow.World;
 
 /**
  * Created with IntelliJ IDEA.
@@ -8,15 +8,17 @@ package net.UltraLow.Objects;
  * To change this template use File | Settings | File Templates.
  */
 
+import net.UltraLow.Objects.Cube;
+import net.UltraLow.Objects.Obstacle;
 import net.UltraLow.Textures.TextureStore;
 import net.UltraLow.Vectors.Vector4f;
 import org.newdawn.slick.opengl.Texture;
 
-public class TreeObstacle extends Obstacle {
+public class Oak extends Obstacle {
 
     private Texture trunk, leaf;
 
-    public TreeObstacle(TextureStore textureStore) {
+    public Oak(TextureStore textureStore) {
         super(textureStore);
         trunk = textureStore.getTexture("res/log.png");
         // Color<>
